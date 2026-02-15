@@ -1,2 +1,15 @@
 components - anything in which information can be change and can be repeated called as component
 props
+
+tailwind prebuilt ui
+shadcn - shadcn is not a another component it is a complete design system
+
+- more platform and libraries;
+1. aceternity ui
+2. shadcn
+3. tailwind ui
+4. MUI 
+5. chakra
+6. prebuilt ui 
+7. radix
+8. tailwind css

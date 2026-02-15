@@ -1,0 +1,2 @@
+components - anything in which information can be change and can be repeated called as component
+props

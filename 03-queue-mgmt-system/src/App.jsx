@@ -14,7 +14,7 @@ export default function App() {
     // change data in queue
     setQueue(
       queue.map((customer) => {
-        customer.id === id ? { ...customer, status: newStatus } : customer;
+      return customer.id === id ? { ...customer, status: newStatus } : customer;
       }),
     );
   };

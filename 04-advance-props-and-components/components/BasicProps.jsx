@@ -31,7 +31,7 @@ const BasicProps = () => {
         ducimus!
       </p>
       <div className="space-y-4">
-        <h3>Differnet colors</h3>
+        <h3 className="text-xl font-medium my-4 ">Differnet colors</h3>
         <div className="flex flex-wrap gap-3">
           <Button
             text={"Primary Button"}
@@ -56,7 +56,7 @@ const BasicProps = () => {
         </div>
       </div>
       <div className="space-y-4">
-        <h3>Differnet Sizes </h3>
+        <h3 className="text-xl font-medium my-4 ">Differnet Sizes </h3>
         <div className="flex flex-wrap gap-3">
           <Button
             text={"Small"}
@@ -65,20 +65,34 @@ const BasicProps = () => {
             size={"small"}
           />
           <Button
-            text={"Large"}
-            size={"large"}
+            text={"Medium(Default)"}
+            size={"medium"}
             color={"secondary"}
-            disabled={true}
             onClick={() => setClickCount(clickCount + 1)}
           />
           <Button
-            text={"Danger Button"}
+            text={"Large"}
+            size={"large"}
             color={"danger"}
             onClick={() => setClickCount(clickCount + 1)}
           />
+        </div>
+      </div>
+
+      <div className="space-y-4">
+        <h3 className="text-xl font-medium my-4 ">Differnet Sizes </h3>
+        <div className="flex flex-wrap gap-3">
           <Button
-            text={"Success Button"}
-            color={"success"}
+            text={"Enabled Button"}
+            color={"primary"}
+            onClick={() => setClickCount(clickCount + 1)}
+            size={"small"}
+          />
+          <Button
+            text={"Disabled Button"}
+            size={"large"}
+            color={"secondary"}
+            disabled={true}
             onClick={() => setClickCount(clickCount + 1)}
           />
         </div>

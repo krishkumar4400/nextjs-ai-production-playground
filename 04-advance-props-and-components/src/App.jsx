@@ -4,10 +4,9 @@ import BasicProps from "../components/BasicProps.jsx";
 import ChildrenProps from "../components/ChildrenProps.jsx";
 import ComplexProps from "../components/ComplexProps.jsx";
 import RefProps from "../components/RefProps.jsx";
-import ThemeToggler, {ThemeProvider} from "../components/ThemeToggler.jsx";
+import ThemeToggler, {ThemeProvider, useTheme} from "../components/ThemeToggler.jsx";
 
 function Navigation() {
-  const isDark = true;
   const sections = [
     { id: "basic", label: "basic props", icon: "📦" },
     { id: "basic", label: "basic props", icon: "🔗" },
@@ -36,8 +35,10 @@ function Navigation() {
 }
 
 function AppContent() {
+  // const isDark = true;
+  const isDark = useTheme();
   return (
-    <div className={`min-h-screen bg-gray-800 `}>
+    <div className={`min-h-screen ${isDark ? 'bg-gray-900' : 'bg-white'} `}>
       <Navigation />
       <div className="w-full mx-auto px-4 py-8">
         <header className="mb-4">
@@ -91,6 +92,6 @@ const App = () => {
       <AppContent />
     </ThemeProvider>
   );
-};
+};  
 
 export default App;

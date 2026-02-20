@@ -63,11 +63,6 @@ function AppContent() {
 
         <div className="space-y-8">
           <div id="basic" className="scroll-mt-200"></div>
-          <RefProps />
-        </div>
-
-        <div className="space-y-8">
-          <div id="basic" className="scroll-mt-200"></div>
           <ChildrenProps />
         </div>
 
@@ -78,9 +73,13 @@ function AppContent() {
 
         <div className="space-y-8">
           <div id="basic" className="scroll-mt-200"></div>
+          <RefProps />
+        </div>
+
+        <div className="space-y-8">
+          <div id="basic" className="scroll-mt-200"></div>
           <ThemeToggler />
         </div>
-        
       </div>
     </div>
   );

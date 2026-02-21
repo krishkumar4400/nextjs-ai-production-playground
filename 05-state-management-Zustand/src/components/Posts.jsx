@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import { usePostsStore } from '../store/postStore.js';
+import React, { useEffect } from "react";
+import { usePostsStore } from "../store/postStore.js";
 
 const Posts = () => {
   const { posts, fetchPosts, loading, error } = usePostsStore();
@@ -7,16 +7,14 @@ const Posts = () => {
     fetchPosts();
   }, [fetchPosts]);
 
-  if(loading) {
-    return <h1>Loading...</h1>
+  if (loading) {
+    return <h1>Loading...</h1>;
   }
-  if(error) {
+  if (error) {
     return (
       <>
         <h1>Error...</h1>
-        <h2>
-          {error}
-        </h2>
+        <h2>{error}</h2>
       </>
     );
   }
@@ -33,6 +31,6 @@ const Posts = () => {
       </ul>
     </div>
   );
-}
+};
 
-export default Posts
+export default Posts;

@@ -13,3 +13,31 @@ shadcn - shadcn is not a another component it is a complete design system
 6. prebuilt ui 
 7. radix
 8. tailwind css
+
+
+
+Next.Js:
+Getting Started & Fundamentals of nextjs
+
+*** What is nextjs and why frameworks are reccomended ?
+
+1. production ready react framework built by vercel that provides additional structures
+2. 
+
+in react we need to handle everything manually
+    eg: routing - react-router-dom
+
+problems in react:
+    1. no built in routing
+    2. no seo optimization
+    3. no server side rendering 
+    4. no built in performance
+    5. no api routes (custom backend)
+    6. manual code spilliting
+
+Nexts.js provieds a lot of things out of the box:
+    1. server side rendering (SSR)
+    2. File based routing
+    3. built in performance optimization 
+
+

@@ -1,6 +1,7 @@
 import React from "react";
 import Counter from "./components/Counter";
 import Navbar from "./components/Navbar";
+import Posts from "./components/Posts";
 
 const App = () => {
   return (
@@ -17,6 +18,8 @@ const App = () => {
       >
         <Navbar />
       </div>
+      <h1>Posts: ----------</h1>
+      <Posts />
     </div>
   );
 };

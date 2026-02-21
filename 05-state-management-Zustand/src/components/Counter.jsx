@@ -1,5 +1,5 @@
 import React from "react";
-import { useCounterStore } from "../../store/counterStore.js";
+import { useCounterStore } from "../store/counterStore.js";
 import CounterValue from "./CounterValue.jsx";
 import CounterButton from "./CounterButton.jsx";
 

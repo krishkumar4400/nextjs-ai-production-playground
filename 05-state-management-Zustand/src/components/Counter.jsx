@@ -1,5 +1,7 @@
 import React from "react";
 import { useCounterStore } from "../../store/counterStore.js";
+import CounterValue from "./CounterValue.jsx";
+import CounterButton from "./CounterButton.jsx";
 
 const Counter = () => {
   const { count, increase, decrease, reset } = useCounterStore();
@@ -11,6 +13,8 @@ const Counter = () => {
         <button onClick={reset}>Reset</button>
         <button onClick={increase}>+</button>
       </div>
+      <CounterValue />
+      <CounterButton />
     </div>
   );
 };
